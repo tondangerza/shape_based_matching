@@ -104,3 +104,14 @@ Well, issues are not clearly classified and many questions are discussed in one 
 [failure case?](https://github.com/meiqua/shape_based_matching/issues/19#issuecomment-481153907)  
 [how to run even faster?](https://github.com/meiqua/shape_based_matching/issues/21#issuecomment-489664586)  
 
+
+## C# Port using Emgu
+
+A partial C# refactor is provided in the `cs` directory. The port uses `System.Numerics.Vector<T>` for SIMD operations and Emgu CV for image processing. The basic build steps are:
+
+```bash
+cd cs
+dotnet run <image_path>
+```
+
+The demo loads the image and saves an output without showing a window.
